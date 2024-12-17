@@ -1,13 +1,15 @@
 package model;
 
+import java.time.LocalDate;
+
 public class Emprestimo {
     public Usuario usuario;
     public Livro livro;
-    public String dataEmprestimo;
-    public String dataDevolucao;
+    public LocalDate dataEmprestimo;
+    public LocalDate dataDevolucao;
     public boolean devolvido = false; //status do emprestimo
     
-    public Emprestimo(Usuario usuario, Livro livro, String dataEmprestimo, String dataDevolucao) {
+    public Emprestimo(Usuario usuario, Livro livro, LocalDate dataEmprestimo, LocalDate dataDevolucao) {
         this.usuario = usuario;
         this.livro = livro;
         this.dataEmprestimo = dataEmprestimo;
@@ -30,19 +32,19 @@ public class Emprestimo {
         this.livro = livro;
     }
 
-    public String getDataEmprestimo() {
+    public LocalDate getDataEmprestimo() {
         return dataEmprestimo;
     }
 
-    public void setDataEmprestimo(String dataEmprestimo) {
+    public void setDataEmprestimo(LocalDate dataEmprestimo) {
         this.dataEmprestimo = dataEmprestimo;
     }
 
-    public String getDataDevolucao() {
+    public LocalDate getDataDevolucao() {
         return dataDevolucao;
     }
 
-    public void setDataDevolucao(String data_devolucao) {
+    public void setDataDevolucao(LocalDate data_devolucao) {
         this.dataDevolucao = data_devolucao;
     }
 
