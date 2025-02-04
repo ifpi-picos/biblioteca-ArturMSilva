@@ -1,4 +1,33 @@
+# Pasta target (arquivos gerados pelo Maven)
+target/
+
+# Dependências baixadas pelo Maven
+.mvn/
+**/mvnw
+**/mvnw.cmd
+
+# Arquivo de lock do Maven
+pom.xml.tag
+pom.xml.releaseBackup
+dependency-reduced-pom.xml
+
+# Logs e arquivos de compilação
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# Configurações de IDEs (IntelliJ, Eclipse, VS Code)
+.idea/
+*.iml
+*.ipr
+*.iws
 .vscode/
+.project
+.classpath
+.settings/
 
-bin/
-
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
