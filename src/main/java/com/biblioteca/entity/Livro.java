@@ -78,4 +78,17 @@ public class Livro {
     public void setEmprestado(boolean emprestado) {
         this.emprestado = emprestado;
     }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "id=" + id +
+                ", título='" + titulo + '\'' +
+                ", autor='" + nomeAutor + '\'' +
+                ", anoPublicacao=" + anoPublicacao +
+                ", quantidadeExemplares=" + quantidadeExemplares +
+                ", gênero='" + genero + '\'' +
+                ", emprestado=" + emprestado +
+                '}';
+    }
 }
