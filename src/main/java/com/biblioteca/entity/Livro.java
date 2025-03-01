@@ -12,9 +12,8 @@ public class Livro {
     public Livro() {
     }
 
-    public Livro(int id, String titulo, String nomeAutor, int anoPublicacao, int quantidadeExemplares, String genero,
+    public Livro(String titulo, String nomeAutor, int anoPublicacao, int quantidadeExemplares, String genero,
             boolean emprestado) {
-        this.id = id;
         this.titulo = titulo;
         this.nomeAutor = nomeAutor;
         this.anoPublicacao = anoPublicacao;

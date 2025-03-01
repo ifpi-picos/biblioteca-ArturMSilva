@@ -10,7 +10,6 @@ public class LivroDAO {
 
     private Connection conexao;
 
-    // Construtor que recebe a conexão com o banco de dados
     public LivroDAO(Connection conexao) {
         this.conexao = conexao;
     }
@@ -48,7 +47,6 @@ public class LivroDAO {
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
                     livro = new Livro(
-                        resultSet.getInt("id"),
                         resultSet.getString("titulo"),
                         resultSet.getString("nome_autor"),
                         resultSet.getInt("ano_publicacao"),
@@ -72,7 +70,6 @@ public class LivroDAO {
 
             while (resultSet.next()) {
                 Livro livro = new Livro(
-                    resultSet.getInt("id"),
                     resultSet.getString("titulo"),
                     resultSet.getString("nome_autor"),
                     resultSet.getInt("ano_publicacao"),

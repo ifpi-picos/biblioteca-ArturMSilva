@@ -124,7 +124,7 @@ public class App {
         System.out.print("Gênero: ");
         String genero = scanner.nextLine();
 
-        Livro livro = new Livro(0, titulo, nomeAutor, anoPublicacao, quantidadeExemplares, genero, false);
+        Livro livro = new Livro(titulo, nomeAutor, anoPublicacao, quantidadeExemplares, genero, false);
         livroDAO.inserir(livro);
         System.out.println("Livro cadastrado com sucesso!");
     }
